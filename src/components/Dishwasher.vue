@@ -10,7 +10,7 @@
     <div class="update">
       <div @click="updateStatus(true)" class="button clean">It's Clean</div>
       <div @click="updateStatus(false)" class="button dirty">It's Dirty</div>
-    </div>
+    </div> 
   </div>
 </template>
 
