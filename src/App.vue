@@ -1,27 +1,33 @@
 <template>
   <div id="app">
-    <Dishwasher/>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/dishwasher">Dishwasher</router-link> |
+      <router-link to="/trash">Trash</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-import Dishwasher from './components/Dishwasher.vue'
-
-export default {
-  name: 'App',
-  components: {
-    Dishwasher
-  }
-}
-</script>
-
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
