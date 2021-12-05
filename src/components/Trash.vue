@@ -58,7 +58,7 @@ export default {
   },
   async mounted () {
     const {data: {count}} = await axios.get('https://dishwasher-api.herokuapp.com/trash/count')
-    const {data: {collectors}} = await axios.get('https://dishwasher-api.herokuapp.com/collectors')
+    const {data: {collectors}} = await axios.get('https://dishwasher-api.herokuapp.com/trash/collectors')
     const response = await axios.get('https://dishwasher-api.herokuapp.com/trash/collector')
     this.collector = response.data.collector
     this.collectors = collectors
@@ -89,10 +89,10 @@ export default {
 .button {
     cursor: pointer;
     color: honeydew;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 6px;
     margin: 10px;
 }

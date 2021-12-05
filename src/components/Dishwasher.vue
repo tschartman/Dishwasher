@@ -41,9 +41,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .square {
+    display: flex;
+    justify-content: center;
     color: honeydew;
     width: 20%;
-    padding: 100px;
+    padding: 75px;
     text-align: center;
     margin: auto;
     border-radius: 6px;
